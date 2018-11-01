@@ -1,0 +1,5 @@
+<h1> Bienvenue dans gossip <%= @user.first_name%></h1>
+
+
+<p><%= link_to "Edite ton profil", edit_user_path(@user), class:"btn btn-primary"%> </p>
+<p><%= link_to "Retour à l'accueil", static_pages_home_path, class:"btn btn-primary" %> </p>

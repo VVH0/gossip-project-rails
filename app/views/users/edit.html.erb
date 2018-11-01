@@ -1,0 +1,23 @@
+<h1>Enregistrer n°<%= @user.id %></h1>
+
+<%= form_for @user do |f| %>
+
+<%= f.label :first_name, "Ton prenom"%></br>
+<%= f.text_field :first_name%></br>
+
+<%= f.label :last_name, "ton nom"%></br>
+<%= f.text_field :last_name%></br>
+
+<%= f.label :email, "Ton mail"%></br>
+<%= f.email_field :email %></br>
+
+<%= f.label :age, "Ton age"%></br>
+<%= f.number_field :age %></br>
+
+<%= f.label :password, "mot de passe "%></br>
+<%= f.text_field :password %></br>
+
+<%= f.submit "Modifier " %>
+<% end %>
+
+<%= link_to 'Clique pour détruire', @user, method: :delete, class:"btn btn-primary"%>

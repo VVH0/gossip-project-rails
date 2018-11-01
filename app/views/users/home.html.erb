@@ -1,0 +1,8 @@
+
+<a href="/users/login">S'identifier</a>
+  <% if @user %>
+    <h1>Bienvenue <%= @user.first_name %> !</h1>
+  <% else %>
+    <h1>Tu vas pouvoir creer un gossip !</h1>
+    <a href="/users/login">S'identifier</a>
+  <% end %>

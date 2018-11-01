@@ -1,0 +1,26 @@
+<table>
+  <tbody>
+    <thead>
+      <tr>
+        <td>Numéro du gossip</td>
+        <td>Titre du gossip</td>
+        <td>Contenu du gossip</td>
+        <td>Auteur du contenu</td>
+        <td>Lien du gossip</td>
+        `<td>Nombre de commentaires</td>
+      </tr>
+    </thead>
+  <% Gossip.all.each do |gossip| %>
+    <tr>
+      <td><%= gossip.id %></td>
+      <td><%= gossip.title %></td>
+      <td><%= gossip.content %></td>
+      <td><%= gossip.anonymous_gossiper %></td>
+      <td><%= link_to 'Voir le gossip', gossip_path(gossip.id) %><td>
+      <td><%= gossip.comments.count %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+<%= link_to 'Enregistre toi', new_user_path,  class:"btn btn-primary"%>
+<%= link_to 'Créer un nouveau gossip', new_gossip_path,  class:"btn btn-primary"%>
