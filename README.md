@@ -1,24 +1,25 @@
-# README
+# GOSSIP PROJECT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+L'objectif de ce projet était de réaliser une application rails facon facebook
 
-* Ruby version
+## 🐣 Pour commencer
 
-* System dependencies
+Cloner ce repository.
 
-* Configuration
+## 🔧 Voici le lien Heroku
 
-* Database creation
 
-* Database initialization
+````
+https://tgp59.herokuapp.com/
+``````
 
-* How to run the test suite
+💁‍♀️ Auteurs 💁‍♀️
 
-* Services (job queues, cache servers, search engines, etc.)
+Ce projet a été réalisé en pair-programming avec Mous Ait Ouayhou et Virginie Valeur Hannebicque.
 
-* Deployment instructions
+
+
+Bonne journée 
 
 * ...
